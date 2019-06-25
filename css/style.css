@@ -1,6 +1,6 @@
 .box{
 	background-image: url('../img/bfoto.jpg');
-	height: 1000px;
+	height: 1500px;
 	width: 100%;
 	color:green;
     font-size: 50px;
@@ -48,4 +48,26 @@
 @keyframes bounce { 
   0% { transform: translateY(0); }
   100% { transform: translateY(-50px); }
+}
+.box3{
+	height: 400px;
+	width: 400px;
+	background-image: url('../img/blogo.png');
+	background-size: cover;
+    background-position: center;
+}
+ .box3:hover {	
+ 	animation: skew 3s infinite;
+	transform: skew(20deg);
+	animation-direction: alternate;
+	opacity: .7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
 }
