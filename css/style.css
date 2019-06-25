@@ -1,3 +1,29 @@
+h1{
+	text-transform: uppercase;
+	font-size: 72px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg, red, #fff, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 4s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	z-index: 50;
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.sticky {
+	position: sticky;
+	top: 0;
+	padding: 30px;
+}
 .box{
 	background-image: url('../img/bfoto.jpg');
 	height: 1500px;
@@ -62,7 +88,6 @@
 	animation-direction: alternate;
 	opacity: .7;
 }
-
 @keyframes skew {
   0% {
     transform: skewX(20deg);
