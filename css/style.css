@@ -1,0 +1,51 @@
+.box{
+	background-image: url('../img/bfoto.jpg');
+	height: 1000px;
+	width: 100%;
+	color:green;
+    font-size: 50px;
+ 	text-align: center;
+}
+.box1{
+	position: relative;
+	background-image: url('../img/messi.jpg');
+	height: 300px;
+	width: 300px;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 	margin-left: 50px;
+ 	display: inline-block;
+}
+.text{
+	 position: absolute; 
+	bottom:0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: 1.5s ease;
+  opacity:0;
+  color: #A70042;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.box1:hover .text {
+  opacity: 1;
+}
+.box2{
+	height: 200px;
+	width: 200px;
+	background-image: url('../img/ball.png');
+	background-size: cover;
+    background-position: center;
+	display: inline-block;
+	margin-left: 100px;
+	animation: bounce 0.8s;
+  	animation-direction: alternate;
+ 	animation-iteration-count: infinite;
+}
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
