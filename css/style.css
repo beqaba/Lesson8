@@ -81,6 +81,7 @@ h1{
 	background-image: url('../img/blogo.png');
 	background-size: cover;
     background-position: center;
+    margin-bottom: -300px;
 }
  .box3:hover {	
  	animation: skew 3s infinite;
@@ -102,7 +103,7 @@ h1{
     transition: all 6s ease-in-out;
     -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
 }
-#axis:hover .move-right{
+#axis:hover .object{
     transform: translate(1000px,0);
     -webkit-transform: translate(1000px,0); /** Chrome & Safari **/
 }
